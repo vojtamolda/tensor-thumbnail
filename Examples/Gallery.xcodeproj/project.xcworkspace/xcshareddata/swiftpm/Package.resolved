@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "tensor-thumbnail",
+        "repositoryURL": "https://github.com/vojtamolda/tensor-thumbnail.git",
+        "state": {
+          "branch": "master",
+          "revision": "1bc0fbd6a65f21791b9181b56ed8d23fd5c249a0",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
