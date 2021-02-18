@@ -1,7 +1,10 @@
 <img src="Images/Gallery.png" alt="Gallery" width="300" align="right">
 
+# Tensor Thumbnail (Archived)
 
-# Tensor Thumbnail
+**This project is in archive mode and will not receive further updates. [TensorFlow](https://www.tensorflow.org/swift/guide/overview) for Swift has been sunset by Google and is no longer being actively developed.**
+
+> Swift for TensorFlow was an experiment in the next-generation platform for machine learning, incorporating the latest research across machine learning, compilers, differentiable programming, systems design, and beyond. It was archived in February 2021.
 
 When working with neural networks in [TensorFlow](https://tensorflow.org), one of the big challenges is aligning the tensor, matrix and vector dimensions properly. When starting with machine learning, it is particularly easy to loose sense of dimensionality in the middle of a complicated expression. This library is designed to help with debugging and understanding code that makes heavy use of linear algebra.
 
