@@ -1,10 +1,6 @@
 <img src="Images/Gallery.png" alt="Gallery" width="300" align="right">
 
-# Tensor Thumbnail (Archived)
-
-**This project is in archive mode and will not receive further updates. [TensorFlow](https://www.tensorflow.org/swift/guide/overview) for Swift has been sunset by Google and is no longer being actively developed.**
-
-> Swift for TensorFlow was an experiment in the next-generation platform for machine learning, incorporating the latest research across machine learning, compilers, differentiable programming, systems design, and beyond. It was archived in February 2021.
+# Tensor Thumbnail
 
 When working with neural networks in [TensorFlow](https://tensorflow.org), one of the big challenges is aligning the tensor, matrix and vector dimensions properly. When starting with machine learning, it is particularly easy to loose sense of dimensionality in the middle of a complicated expression. This library is designed to help with debugging and understanding code that makes heavy use of linear algebra.
 
@@ -29,7 +25,7 @@ Schematics above shows a few examples and a way to reconstruct tensor shape from
 
 The main goal of the project is implementation of the Quick Look feature for `Tensor`s in [Xcode Debugger](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/debugging_tools.html). Here's official [Apple documentation](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/CustomClassDisplay_in_QuickLook/CH02-std_objects_support/CH02-std_objects_support.html#//apple_ref/doc/uid/TP40014001-CH3-SW19) on the topic which contains explanation how everything works. The library implements an extension of `Tensor` with `debugQuickLookObject()` method that returns the tensor thumbnail wrapped in a `NSView`.
 
-<div align="center"><img src="https://mk0vetoqufa3wxud0fno.kinstacdn.com/wp-content/uploads/2013/03/Futurama-Fry-Stress-620x320.png" alt="Doesn't work" width="300"></div>
+<div align="center"><img src="https://www.pinclipart.com/picdir/big/200-2006233_anxiety-clipart-gif-transparent-fry-futurama-png-download.png" alt="Doesn't work" width="300"></div>
 
 *Unfortunately, as of Xcode 12 this doesn't seem to be possible. To the extent of my knowledge the `debugQuickLookObject()` method is called only for classes. It requires `@objc` decorator responsible for Objective-C bridging in order to work properly. Since `Tensor` is a struct there's no way to implement this feature unless Apple decides to allow it and changes the implementation in Xcode. There are more details about the problem in [issue #2](https://github.com/vojtamolda/tensor-thumbnail/issues/2).*
 
